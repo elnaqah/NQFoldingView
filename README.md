@@ -21,6 +21,28 @@ add to View
     [self.view addSubview:foldingView];
 ```
 
+you can use the delegate method 
+```objc
+-(void)foldingViewDidAnimateToFold
+{
+    NSLog(@"did animate to fold");
+}
+
+-(void)foldingViewDidAnimateToFlat
+{
+    NSLog(@"did animate to flat");
+}
+
+-(void)foldingViewWillAnimateToFlat
+{
+    NSLog(@"will animate to flat");
+}
+
+-(void)foldingViewWillAnimateToFold
+{
+    NSLog(@"will animate to fold");
+}
+```
 This controller under MIT license just mention me in the app thanks
 
 The MIT License (MIT)
