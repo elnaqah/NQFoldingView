@@ -19,6 +19,11 @@
 		C16AAA19177BE613003FCABB /* NQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C16AAA18177BE613003FCABB /* NQViewController.m */; };
 		C16AAA1C177BE613003FCABB /* NQViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16AAA1A177BE613003FCABB /* NQViewController_iPhone.xib */; };
 		C16AAA1F177BE613003FCABB /* NQViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C16AAA1D177BE613003FCABB /* NQViewController_iPad.xib */; };
+		C16AAA28177BE656003FCABB /* NQFoldingUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = C16AAA27177BE656003FCABB /* NQFoldingUIView.m */; };
+		C16AAA2C177BE805003FCABB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16AAA2B177BE805003FCABB /* QuartzCore.framework */; };
+		C16AAA2E177BEC9C003FCABB /* vector-tree.png in Resources */ = {isa = PBXBuildFile; fileRef = C16AAA2D177BEC9C003FCABB /* vector-tree.png */; };
+		C16AAA3C177BF031003FCABB /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = C16AAA3B177BF031003FCABB /* icon57.png */; };
+		C16AAA40177BF058003FCABB /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = C16AAA3F177BF058003FCABB /* icon114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,12 @@
 		C16AAA18177BE613003FCABB /* NQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NQViewController.m; sourceTree = "<group>"; };
 		C16AAA1B177BE613003FCABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NQViewController_iPhone.xib; sourceTree = "<group>"; };
 		C16AAA1E177BE613003FCABB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NQViewController_iPad.xib; sourceTree = "<group>"; };
+		C16AAA26177BE656003FCABB /* NQFoldingUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NQFoldingUIView.h; sourceTree = "<group>"; };
+		C16AAA27177BE656003FCABB /* NQFoldingUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NQFoldingUIView.m; sourceTree = "<group>"; };
+		C16AAA2B177BE805003FCABB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C16AAA2D177BEC9C003FCABB /* vector-tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vector-tree.png"; sourceTree = "<group>"; };
+		C16AAA3B177BF031003FCABB /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
+		C16AAA3F177BF058003FCABB /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16AAA2C177BE805003FCABB /* QuartzCore.framework in Frameworks */,
 				C16AAA00177BE613003FCABB /* UIKit.framework in Frameworks */,
 				C16AAA02177BE613003FCABB /* Foundation.framework in Frameworks */,
 				C16AAA04177BE613003FCABB /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +70,8 @@
 		C16AA9F3177BE613003FCABB = {
 			isa = PBXGroup;
 			children = (
+				C16AAA3F177BF058003FCABB /* icon114.png */,
+				C16AAA3B177BF031003FCABB /* icon57.png */,
 				C16AAA05177BE613003FCABB /* NQFoldingView */,
 				C16AA9FE177BE613003FCABB /* Frameworks */,
 				C16AA9FD177BE613003FCABB /* Products */,
@@ -75,6 +89,7 @@
 		C16AA9FE177BE613003FCABB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C16AAA2B177BE805003FCABB /* QuartzCore.framework */,
 				C16AA9FF177BE613003FCABB /* UIKit.framework */,
 				C16AAA01177BE613003FCABB /* Foundation.framework */,
 				C16AAA03177BE613003FCABB /* CoreGraphics.framework */,
@@ -85,6 +100,7 @@
 		C16AAA05177BE613003FCABB /* NQFoldingView */ = {
 			isa = PBXGroup;
 			children = (
+				C16AAA25177BE656003FCABB /* source */,
 				C16AAA0E177BE613003FCABB /* NQAppDelegate.h */,
 				C16AAA0F177BE613003FCABB /* NQAppDelegate.m */,
 				C16AAA17177BE613003FCABB /* NQViewController.h */,
@@ -99,6 +115,7 @@
 		C16AAA06177BE613003FCABB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C16AAA2D177BEC9C003FCABB /* vector-tree.png */,
 				C16AAA07177BE613003FCABB /* NQFoldingView-Info.plist */,
 				C16AAA08177BE613003FCABB /* InfoPlist.strings */,
 				C16AAA0B177BE613003FCABB /* main.m */,
@@ -108,6 +125,15 @@
 				C16AAA15177BE613003FCABB /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C16AAA25177BE656003FCABB /* source */ = {
+			isa = PBXGroup;
+			children = (
+				C16AAA26177BE656003FCABB /* NQFoldingUIView.h */,
+				C16AAA27177BE656003FCABB /* NQFoldingUIView.m */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +194,9 @@
 				C16AAA16177BE613003FCABB /* Default-568h@2x.png in Resources */,
 				C16AAA1C177BE613003FCABB /* NQViewController_iPhone.xib in Resources */,
 				C16AAA1F177BE613003FCABB /* NQViewController_iPad.xib in Resources */,
+				C16AAA2E177BEC9C003FCABB /* vector-tree.png in Resources */,
+				C16AAA3C177BF031003FCABB /* icon57.png in Resources */,
+				C16AAA40177BF058003FCABB /* icon114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +210,7 @@
 				C16AAA0C177BE613003FCABB /* main.m in Sources */,
 				C16AAA10177BE613003FCABB /* NQAppDelegate.m in Sources */,
 				C16AAA19177BE613003FCABB /* NQViewController.m in Sources */,
+				C16AAA28177BE656003FCABB /* NQFoldingUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NQFoldingView/NQFoldingView-Prefix.pch";
 				INFOPLIST_FILE = "NQFoldingView/NQFoldingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +320,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NQFoldingView/NQFoldingView-Prefix.pch";
 				INFOPLIST_FILE = "NQFoldingView/NQFoldingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,8 +1,8 @@
 //
-//  NQViewController.h
-//  NQFoldingView
+//  NQFoldingUIView.h
+//  foldingTest
 //
-//  Created by AhmedElnaqah on 6/27/13.
+//  Created by AhmedElnaqah on 4/6/13.
 //  Copyright (c) 2013 elnaqah. All rights reserved.
 //
 //The MIT License (MIT)
@@ -29,8 +29,40 @@
 
 
 #import <UIKit/UIKit.h>
-#import "NQFoldingUIView.h"
+@protocol NQFoldingUIViewDelegate
 
-@interface NQViewController : UIViewController<NQFoldingUIViewDelegate>
+@optional
+-(void) willIntializeLayer;
+-(void) didFinishIntializeLayer;
+-(void) willIntializeTransfromations;
+-(void) didFinishIntializeTransformations;
+-(void) foldingViewWillAnimateToFlat;
+-(void) foldingViewDidAnimateToFlat;
+-(void) foldingViewWillAnimateToFold;
+-(void) foldingViewDidAnimateToFold;
+@end
 
+typedef enum
+{
+    NQOpened=0,
+    NQClosed=1,
+    NQTransition=2
+}NQFoldingStatus;
+
+typedef struct {
+    float x;
+    float y;
+    float z;
+}NQAxes;
+
+
+typedef enum {
+    NQHorizontalFolding,
+    NQVerticalFolding
+} NQFoldingType;
+@interface NQFoldingUIView : UIView
+@property NQFoldingType type;
+@property NQFoldingStatus status;
+@property (strong) id<NQFoldingUIViewDelegate> delegate;
+- (id)initWithFrame:(CGRect)frame WithImage:(UIImage *) image WithType:(NQFoldingType) type;
 @end
