@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="NQFoldingView : Control for ipad and iphone that is a view contain image that fold and unfold with animation and the image can be pinched" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>NQFoldingView</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/elnaqah/NQFoldingView">View on GitHub</a>
+
+          <h1 id="project_title">NQFoldingView</h1>
+          <h2 id="project_tagline">Control for ipad and iphone that is a view contain image that fold and unfold with animation and the image can be pinched</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/elnaqah/NQFoldingView/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/elnaqah/NQFoldingView/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="use-it-in-your-app" class="anchor" href="#use-it-in-your-app"><span class="octicon octicon-link"></span></a>Use it in your app</h3>
+
+<p>Control for ipad and iphone that is a view contain image that fold and unfold with animation 
+and the image can be pinched</p>
+
+<p><img src="http://farm8.staticflickr.com/7438/9149431570_1aebb8c01b.jpg" alt="NQFoldingView"></p>
+
+<p>You can use it as :</p>
+
+<p>initialize</p>
+
+<div class="highlight highlight-objc"><pre> <span class="n">NQFoldingUIView</span> <span class="o">*</span> <span class="n">foldingView</span><span class="o">=</span><span class="p">[[</span><span class="n">NQFoldingUIView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">bounds</span> <span class="n">WithImage</span><span class="o">:</span><span class="p">[</span><span class="n">UIImage</span> <span class="n">imageNamed</span><span class="o">:</span><span class="s">@"image Name.png"</span><span class="p">]</span> <span class="n">WithType</span><span class="o">:</span><span class="n">NQHorizontalFolding</span><span class="p">];</span>
+</pre></div>
+
+<p>set delegate</p>
+
+<div class="highlight highlight-objc"><pre>    <span class="n">foldingView</span><span class="p">.</span><span class="n">delegate</span><span class="o">=</span><span class="n">self</span><span class="p">;</span>
+</pre></div>
+
+<p>add to View</p>
+
+<div class="highlight highlight-objc"><pre>    <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">view</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">foldingView</span><span class="p">];</span>
+</pre></div>
+
+<p>you can use the delegate method </p>
+
+<div class="highlight highlight-objc"><pre><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">foldingViewDidAnimateToFold</span>
+<span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"did animate to fold"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">foldingViewDidAnimateToFlat</span>
+<span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"did animate to flat"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">foldingViewWillAnimateToFlat</span>
+<span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"will animate to flat"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">foldingViewWillAnimateToFold</span>
+<span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"will animate to fold"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>This controller under MIT license just mention me in the app thanks</p>
+
+<p>The MIT License (MIT)</p>
+
+<p>Copyright (c) 2013 ahmed elnaqah</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">NQFoldingView maintained by <a href="https://github.com/elnaqah">elnaqah</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-42599206-4");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
